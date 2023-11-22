@@ -88,7 +88,7 @@ function initGUI(){
 		drawScene();
     });
     
-    extView=gui.add(cntrls,"externalView").listen().name("Εξωτερικός παρατηρητής");
+    extView=gui.add(cntrls,"externalView").listen().name("External Observer");
     extView.onChange(function(newValue){
     	externalView=newValue;
     	moveWagon=newValue && moveWagon;//if car on the move and externalView=false then stop movement
@@ -98,7 +98,7 @@ function initGUI(){
     });
 
     if(externalView){
-        moveCar=gui.add(cntrls,"moveWagon").listen().name("Κίνηση βαγονιού");
+        moveCar=gui.add(cntrls,"moveWagon").listen().name("Wagon Motion");
         moveCar.onChange(function(newValue){
         	moveWagon=newValue;
         	setWagonVelocity();
