@@ -2,7 +2,7 @@
  * Basic program 
  */
 
-var programName="Ειδική Σχετικότητα: 2. Ανάκλαση φωτός";
+var programName="Special Relativity: 2";
 
 var canvas=document.getElementById("picDraw");
 var context=canvas.getContext("2d");
